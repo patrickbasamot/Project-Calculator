@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+.calculator{
+height: 100vh;
+display: flex;
+
+}
