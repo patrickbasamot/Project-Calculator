@@ -32,7 +32,7 @@ operators.forEach(clicked => {
         switch(operator){
 
             //For Readability
-            //Pass the oldnumber value again into another html tag called above 'oldinput' 
+            //Pass the oldnumber value again into another html tag called above 'oldinput' and the operator used. 
             case '+':
                 oldinput.innerText = `${oldnumber}  ${operator} `;
                 inputs.innerText="";
