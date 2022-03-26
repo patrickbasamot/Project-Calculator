@@ -22,11 +22,17 @@ number.forEach(click =>{
 let operator;
 operators.forEach(clicked => {
     clicked.addEventListener('click',()=>{
-        // switch
-      operator = clicked.innerText;
 
-      oldnumber = inputs.innerText;
+        //Get the value of the clicked operator
+        operator = clicked.innerText;
+
+        //Pass the value of the First input
+        oldnumber = inputs.innerText;
+
         switch(operator){
+
+            //For Readability
+            //Pass the oldnumber value again into another html tag called above 'oldinput' 
             case '+':
                 oldinput.innerText = `${oldnumber}  ${operator} `;
                 inputs.innerText="";
@@ -47,7 +53,10 @@ operators.forEach(clicked => {
     })
 })
 
-//Equals 
+//Equals Button
+// Used ParseInt() to convert the string, because the default value of innerText is a String. 
+//Example
+//console.log(typeof(inputs.innerText));
 equal.addEventListener('click',() =>{
     let total = 0;
     oldinput.innerText += inputs.innerText + equal.innerText ;
@@ -59,7 +68,6 @@ equal.addEventListener('click',() =>{
         case '*':
             total = parseInt(oldnumber) * parseInt(inputs.innerText);
             inputs.innerText =  total;
-           
             break;
         case '-':
             total = parseInt(oldnumber) - parseInt(inputs.innerText);
@@ -71,7 +79,9 @@ equal.addEventListener('click',() =>{
             break;
     }
 })
+
 //CLEAR
+//Set all variables to 0 or Empty
 clear.addEventListener('click',()=>{
         inputs.innerText = ""
         oldinput.innerText =""
