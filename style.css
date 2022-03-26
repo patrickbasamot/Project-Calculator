@@ -13,7 +13,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin-top: 20vh;
-    width: 420px;
+    
     grid-gap: 5px;
 
 }
