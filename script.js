@@ -12,6 +12,7 @@ let oldnumber = 0;
 number.forEach(click =>{
     click.addEventListener('click',() =>{
         let numInput =  click.innerText; 
+        
         inputs.innerText += numInput;
       
     })

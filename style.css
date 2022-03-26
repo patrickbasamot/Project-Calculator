@@ -1,9 +1,25 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.calculator{
-height: 100vh;
-display: flex;
 
+.calculator{
+display: grid;
+grid-template-columns:repeat(4,1fr);
+width: 250px;
+place-content: center();
+}
+.calculator > button{
+    background-color: black;
+    color: white;
+    border: 5px solid burlywood;
+    height: 100px;
+    width: 100px;
+}
+
+#oldinput, #input{
+   font-size: 2rem;
+   text-align: center;
 }
